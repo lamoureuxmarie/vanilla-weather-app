@@ -30,7 +30,21 @@
 .weather-app {
     padding:20px;
     border-radius: 10px;
-    background-color: #F36A47;
+    background: linear-gradient(-45deg, #db5938, #F36A47, #f5866a, #f1967f, #f1c386);
+    background-size: 400% 400%;
+    animation: change 15s ease-in-out infinite;
+  }
+
+  @keyframes change {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
   }
 
 .overview {
@@ -56,6 +70,7 @@ margin-bottom: 20px;
     font-size: 14px;
     top: -34px;
 }
+
 
 
 
