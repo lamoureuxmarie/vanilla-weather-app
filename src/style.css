@@ -67,6 +67,7 @@ p {
 margin-bottom: 20px;
 }
 
+
 .weather-temperature img {
     margin-right: 10px;
     height: 64px;
@@ -97,10 +98,11 @@ margin-bottom: 20px;
 }
 
 .search-btn {
+    font-size: 14px;
     border: none;
     position: relative;
-    left: -44px;
-    bottom:-2px;
+    left: -40px;
+    bottom:-1px;
 }
 
 .current-location-btn  {
@@ -191,3 +193,4 @@ margin-bottom: 20px;
     height: auto;
     line-height: 15px;
     white-space: nowrap;
+}
