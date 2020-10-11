@@ -12,7 +12,7 @@
   ul {
     color: #fbfdfd;
     margin: 0;
-    margin-top: 5px;
+    margin-bottom: 10px;
     padding: 0;  
 }
   li {
@@ -28,13 +28,20 @@ li:first.letter {
     text-transform: capitalize;
 }
 
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: #fbfdfd;
+    padding: 0;
+}
+
 .description {
     text-transform: capitalize;
 }
 
 .weather-app-wrapper {
     max-width: 600px;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 .weather-app {
     padding:20px;
@@ -112,29 +119,38 @@ margin-bottom: 20px;
    color: #fbfdfd;
    background-color: #db5938;
 }
+
 .celsius {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #fbfdfd;
+    color: #F36A47;
     cursor: default;
  }
 
  .celsius:hover {
-    color: #fbfdfd;
+    color: #F36A47;
     text-decoration: none;
  }
 
  .fahrenheit {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #fbfdfd;
+    color: #F36A47;
     cursor: default;
  }
 
  .fahrenheit:hover {
-    color: #fbfdfd;
+    color: #F36A47;
     text-decoration: none;
  }
+
+ .active {
+    font-family: 'Roboto', sans-serif;
+    color: : 16px;
+    color: #fbfdfd;
+    cursor: default;
+ }
+ 
 
  .github-link {
     font-family: 'Roboto Mono', monospace;
@@ -142,3 +158,36 @@ margin-bottom: 20px;
     font-size: 12px;
     margin-left: 5px;
 }
+
+.weather-forecast {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.weather-forecast h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #fbfdfd;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    height: 15px;
+    line-height: 15px;
+    padding-top: 7px;
+  }
+
+.weather-forecast img {
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+    width: 48px;
+  }
+
+.weather-forecast-temperature {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color:  #fbfdfd;
+    font-size: 14px;
+    font-weight: 300;
+    height: auto;
+    line-height: 15px;
+    white-space: nowrap;
