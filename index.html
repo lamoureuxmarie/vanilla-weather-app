@@ -4,22 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&family=Roboto+Mono:wght@300;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
+        <div class="overview">
     <h1>Berlin</h1>
     <ul>
       <li>
@@ -29,11 +28,16 @@
         Cloudy
       </li>
     </ul>
+  </div>
     <div class="row">
       <div class="col-6">
-        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy">
-        9°C | °F 
+        <div class="clearfix weather-temperature">
+        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy" class="float-left">
+        <div class="float-left">
+        <strong>9</strong><span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a> </span>
       </div>
+      </div>
+    </div>
       <div class="col-6">
         <ul>
           <li>
@@ -46,18 +50,19 @@
             Wind: 13km/h
           </li>
         </ul>
-      </div>
-
+      </div>  
     </div>
+    <div class="row weather-forecast" id="forecast"></div>
   </div>
-    <small>
-      <a
-        href="#"
-        target="_blank"
-        >Open-source code</a
-      >
-      by Marie Lamoureux
-    </small>
+  <small>
+    <a
+      href="#"
+      target="_blank"
+      >Open-source code</a
+    >
+    by Marie Lamoureux
+  </small>
+</div>
   </div>
     <script src="src/app.js"></script>
   </body>
