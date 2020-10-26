@@ -4,65 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&family=Roboto+Mono:wght@300;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&family=Roboto+Mono:wght@300;500&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/ffc6706a2d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-      <div class="weather-app">
-        <div class="overview">
-    <h1 id="city"></h1>
-      <p id="current-time"></p> 
-  </div>
-    <div class="row">
-      <div class="col-6">
-        <div class="clearfix weather-temperature">
-        <img src="" alt="" id="icon" class="float-left">
-        <div class="float-left">
-        <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link" class="active celsius">°C</a> | <a href="#" class="fahrenheit" id="fahrenheit-link">°F</a> </span>
-      </div>
+        <div class="weather-app">
+          <div class="row search-engine">
+            <div class="col-12">
+              <form id="search-form">
+                <input
+                  type="search"
+                  placeholder="Change city.."
+                  class="city-input"
+                  id="city-input"
+                  autocomplete="off"
+                />
+                <input
+                  type="submit"
+                  class="search-btn"
+                  id="search-btn"
+                  value="Go"
+                />
+              </form>
+              <button class="current-location-btn" id="current-location-btn">
+                <i class="fas fa-map-marker-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <p id="current-time"></p>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active celsius">°C</a>
+                    |
+                    <a href="#" class="fahrenheit" id="fahrenheit-link">°F</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li class="description" id="description"></li>
+                <li id="humidity"></li>
+                <li id="wind"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row weather-forecast" id="forecast"></div>
+          <div class="row daily-forecast" id="daily-forecast"></div>
+        </div>
+        <small class="github-link">
+          <a
+            href="https://github.com/lamoureuxmarie/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Marie Lamoureux
+        </small>
       </div>
     </div>
-      <div class="col-6">
-        <ul>
-          <li class="description" id="description"></li>
-          <li id="humidity"></li>
-          <li id="wind"></li>
-        </ul>
-      </div>  
-    </div>
-    <div class="row weather-forecast" id="forecast"></div>
-    <div class="row weather-forecast" id="daily-forecast"></div>
-    <div class="row search-engine">
-    <div class="col-6">
-    <form id="search-form">
-      <input type="search" placeholder="Change city.." class="city-input" id="city-input" autocomplete="off">
-      <input type="submit" class="search-btn" id="search-btn" value="🔍">
-    </form>
-  </div>
-  <div class="col-6">
-    <button class="current-location-btn" id="current-location-btn">Current location</button>
-  </div>
-  </div>
-  </div>
-  <small class="github-link">
-    <a
-      href="https://github.com/lamoureuxmarie/vanilla-weather-app"
-      target="_blank"
-      >Open-source code</a
-    >
-    by Marie Lamoureux
-  </small>
-</div>
-  </div>
     <script src="src/app.js"></script>
   </body>
 </html>

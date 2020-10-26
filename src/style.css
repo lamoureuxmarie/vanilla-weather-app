@@ -5,10 +5,10 @@
     font-family: 'Raleway', sans-serif;
     font-size: 28px;
     font-weight: 600;
-    line-height: 28px;
-    margin-bottom: 0;
+    line-height: 8px;
+    margin-bottom: 8px;
+    margin-left: 6px;
   }
-
   ul {
     color: #fbfdfd;
     margin: 0;
@@ -23,22 +23,19 @@
     font-size: 14px;
     line-height: 19px;
 }
-
 li:first.letter {
     text-transform: capitalize;
 }
-
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     color: #fbfdfd;
     padding: 0;
+    margin-left: 6px;
 }
-
 .description {
     text-transform: capitalize;
 }
-
 .weather-app-wrapper {
     max-width: 600px;
     margin: 40px auto;
@@ -50,7 +47,6 @@ p {
     background-size: 400% 400%;
     animation: change 15s ease-in-out infinite;
   }
-
   @keyframes change {
     0% {
       background-position: 0 50%;
@@ -62,18 +58,15 @@ p {
       background-position: 0 50%;
     }
   }
-
 .overview {
 margin-bottom: 20px;
 }
-
 
 .weather-temperature img {
     margin-right: 10px;
     height: 64px;
     width: 64px;
 }
-
 .weather-temperature strong {
     font-family: 'Roboto', sans-serif;
     color: #fbfdfd;
@@ -81,30 +74,34 @@ margin-bottom: 20px;
     font-weight: 500;
     line-height: 1;
 }
-
 .weather-temperature .units {
     color: #fbfdfd;
     position: relative;
     font-size: 14px;
     top: -34px;
 }
-
 .city-input {
     border: none;
     border-radius: 5px;
     padding: 5px 16px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    width: 80%;
 }
-
 .search-btn {
-    font-size: 14px;
+      color: #fbfdfd;
+    background-color: #F36A47;
     border: none;
-    position: relative;
-    left: -40px;
-    bottom:-1px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
-
+.search-btn:hover {
+   color: #fbfdfd;
+   background-color: #db5938;
+   transition: all 0.2s ease-in-out;
+}
 .current-location-btn  {
     color: #fbfdfd;
     background-color: #F36A47;
@@ -113,59 +110,53 @@ margin-bottom: 20px;
     padding: 5px 15px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    float: right;
     position: relative;
-    left: -64px;
+    top: -31px;
 }
-
 .current-location-btn:hover {
    color: #fbfdfd;
    background-color: #db5938;
+   transition: all 0.2s ease-in-out;
 }
-
 .celsius {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #F36A47;
     cursor: default;
  }
-
  .celsius:hover {
     color: #F36A47;
     text-decoration: none;
  }
-
  .fahrenheit {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #F36A47;
     cursor: default;
  }
-
  .fahrenheit:hover {
     color: #F36A47;
     text-decoration: none;
  }
-
  .active {
     font-family: 'Roboto', sans-serif;
     color: : 16px;
     color: #fbfdfd;
     cursor: default;
  }
- 
 
+ 
  .github-link {
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     font-size: 12px;
     margin-left: 5px;
 }
-
 .weather-forecast {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
 .weather-forecast h3 {
     font-family: 'Roboto', sans-serif;
     color: #fbfdfd;
@@ -176,14 +167,12 @@ margin-bottom: 20px;
     line-height: 15px;
     padding-top: 7px;
   }
-
 .weather-forecast img {
     display: block;
     margin: 0 auto;
     height: 48px;
     width: 48px;
   }
-
 .weather-forecast-temperature {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -194,3 +183,23 @@ margin-bottom: 20px;
     line-height: 15px;
     white-space: nowrap;
 }
+.daily-forecast {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+.daily-forecast h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #fbfdfd;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    height: 15px;
+    line-height: 15px;
+    padding-top: 7px;
+  }
+.daily-forecast img {
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+    width: 48px;
+  }
